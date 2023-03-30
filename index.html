@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Lâmpada</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        div{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body id="fundo">
+    <img src="imagens/lampada-off (2).png" alt="Lâmpada Desligada" id="imgLampada">
+    <div>
+        <button id="btnacender">Acender</button>
+        <button id="btnapagar">Apagar</button>
+        <button id="btntrocar">Trocar Lâmpada</button>
+    </div>
+
+    <script>
+
+        btnacender.addEventListener("click", acessa);
+        btnapagar.addEventListener("click", apagada);
+        imgLampada.addEventListener("click", quebrada);
+        btntrocar.addEventListener("click", trocar);
+
+
+        function acessa() {
+            fundo.style.backgroundColor = "#DAA520";
+            imgLampada.setAttribute("src", "./imagens/lampada-on (2).png")
+
+        }
+        function apagada() {
+            fundo.style.backgroundColor = "#1C1C1C";
+            imgLampada.setAttribute("src", "./imagens/lampada-off (2).png")
+
+        }
+        function quebrada() {
+            fundo.style.backgroundColor = "#1C1C1C";
+            imgLampada.setAttribute("src", "./imagens/lampada-quebrada (2).png")
+
+        }
+        function trocar() {
+            fundo.style.backgroundColor = "#1C1C1C";
+            imgLampada.setAttribute("src", "./imagens/lampada-off (2).png")
+
+        }
+
+// eventlistneer cair na prova
+
+    </script>
+
+</body>
+
+</html>
